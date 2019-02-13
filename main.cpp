@@ -3,12 +3,12 @@
 using namespace std;
 
 int main(){
-    char playerOneChoice, playerTwoChoice, playAgain == 'y';
+    char playerOneChoice, playerTwoChoice, playAgain = 'y';
     
     cout << "Welcome to Rock-Paper-Scissors!" << endl
     << "Enter (R)ock, (P)aper or (S)cissors for your choices.\n" << endl;
     
-    while(playAgain == 'y' && playAgain == 'Y'){
+    while(playAgain == 'y' || playAgain == 'Y'){
         cout << "Player One, choose your throw! - ";
         cin >> playerOneChoice;
         cout << endl << "Player Two, choose your throw! - ";
@@ -56,7 +56,7 @@ int main(){
                 << "R for Rock." << endl << "P for Paper" << endl << "S for Scissors" << endl;
         }
 
-        cout << "Do you want to play again? ";
+        cout << "\n\nDo you want to play again? ";
         cin >> playAgain;
     }
 
